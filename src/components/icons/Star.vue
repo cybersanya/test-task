@@ -1,0 +1,12 @@
+<template>
+<svg width="12" height="12" viewBox="0 0 12 12" :fill="color" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 9.64421L9.708 12L8.724 7.56L12 4.57263L7.686 4.18737L6 0L4.314 4.18737L0 4.57263L3.276 7.56L2.292 12L6 9.64421Z"/>
+</svg>
+</template>
+
+<script>
+import Icon from "./Icon"
+export default {
+    mixins: [Icon]
+}
+</script>

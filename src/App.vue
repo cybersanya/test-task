@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="app">
+    <levels></levels>
+    <points-counter></points-counter>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Levels from "./components/Levels.vue"
+import PointsCounter from './components/PointsCounter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Levels,
+    PointsCounter
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto:wght@400;900&display=swap');
+body {
+  background-color: black;
+}
+.app {
+  margin: 0 auto;
+  display: flex;
+  font-family: Roboto;
+  color: white;
+  min-width: 1320px;
+  max-width: 1680px;
 }
 </style>
